@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+:root{
+    --cor-fundo: #0d0d0d; 
+    --cor-principal: #1b1f3b; 
+    --cor-secundaria: #353b56; 
+    --cor-destaque: #00ffea; 
+    --cor-texto: #e0f7fa; 
+    --cor-hover: #00796b; 
+}
+
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.caixa-principal{
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 234, 0.5); 
+    border: 2px solid var(--cor-destaque);
+}
+
+h1 {
+    color: var(--cor-destaque);
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: 2px solid var(--cor-destaque);
+    border-radius: 20px;
+    padding: 15px 30px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: var(--cor-hover);
+    
+}
+
+.caixa-resultado {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid var(--cor-destaque);
+    border-radius: 10px;
+}
+
+.texto-resultado {
+    font-size: 20px;
+    color: var(--cor-texto);
+}
